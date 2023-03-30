@@ -1,0 +1,9 @@
+{
+    "dependencies": {
+        "@libsql/isomorphic-fetch": "../../isomorphic-fetch",
+        "@libsql/isomorphic-ws": "../../isomorphic-ws"
+    },
+    "devDependencies": {
+        "wrangler": "^2.13.0"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "type": "module",
+    "dependencies": {
+        "@libsql/isomorphic-fetch": "../../isomorphic-fetch",
+        "@libsql/isomorphic-ws": "../../isomorphic-ws"
+    }
+}

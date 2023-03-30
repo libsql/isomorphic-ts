@@ -1,2 +1,3 @@
 "use strict";
-module.exports = require("ws");
+const { WebSocket } = require("ws");
+module.exports = { WebSocket };

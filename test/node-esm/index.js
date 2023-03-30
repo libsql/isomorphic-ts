@@ -1,5 +1,5 @@
-import WebSocket from "@libsql/isomorphic-ws";
-import fetch from "@libsql/isomorphic-fetch";
+import { WebSocket } from "@libsql/isomorphic-ws";
+import { fetch } from "@libsql/isomorphic-fetch";
 
 const ws = new WebSocket("ws://localhost:8080");
 ws.onopen = (event) => {

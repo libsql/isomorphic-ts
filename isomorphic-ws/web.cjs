@@ -1,1 +1,1 @@
-module.exports = WebSocket;
+module.exports = { WebSocket };

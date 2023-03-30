@@ -7,5 +7,4 @@ export {
     _Request as Request,
     _Response as Response,
     _Headers as Headers,
-    _fetch as default,
 };

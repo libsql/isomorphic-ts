@@ -1,6 +1,6 @@
 "use strict";
-const WebSocket = require("@libsql/isomorphic-ws");
-const fetch = require("@libsql/isomorphic-fetch");
+const { WebSocket } = require("@libsql/isomorphic-ws");
+const { fetch } = require("@libsql/isomorphic-fetch");
 
 const ws = new WebSocket("ws://localhost:8080");
 ws.onopen = (event) => {

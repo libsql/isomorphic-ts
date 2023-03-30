@@ -1,6 +1,6 @@
 {
   "name": "@libsql/isomorphic-ws",
-  "version": "0.0.1-pre",
+  "version": "0.1.0",
   "keywords": ["ws", "websocket", "isomorphic", "node", "deno", "workers"],
   "description": "Isomorphic WebSockets in Node, Deno and Cloudflare Workers",
   "repository": {

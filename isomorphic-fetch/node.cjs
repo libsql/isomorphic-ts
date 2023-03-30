@@ -1,2 +1,8 @@
 "use strict";
-module.exports = require("node-fetch");
+const fetch = require("node-fetch");
+module.exports = {
+    fetch,
+    Request: fetch.Request,
+    Response: fetch.Response,
+    Headers: fetch.Headers,
+};

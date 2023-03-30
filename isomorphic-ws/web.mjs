@@ -1,1 +1,2 @@
-export default WebSocket;
+const _WebSocket = WebSocket;
+export { _WebSocket as WebSocket };

@@ -1,7 +1,7 @@
 //import WebSocket from "npm:@libsql/isomorphic-ws";
 //import fetch from "npm:@libsql/isomorphic-fetch";
-import WebSocket from "../../isomorphic-ws/web.mjs";
-import fetch from "../../isomorphic-fetch/web.mjs";
+import { WebSocket } from "../../isomorphic-ws/web.mjs";
+import { fetch } from "../../isomorphic-fetch/web.mjs";
 
 const ws = new WebSocket("ws://localhost:8080");
 ws.onopen = (event) => {

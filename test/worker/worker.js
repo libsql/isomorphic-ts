@@ -1,5 +1,5 @@
-import fetch from "@libsql/isomorphic-fetch";
-import WebSocket from "@libsql/isomorphic-ws";
+import { fetch } from "@libsql/isomorphic-fetch";
+import { WebSocket } from "@libsql/isomorphic-ws";
 
 addEventListener("fetch", (event) => {
     const url = new URL(event.request.url);

@@ -1,3 +1,1 @@
-import fetch from "node-fetch";
-const { Request, Response, Headers } = fetch;
-export { fetch, Request, Response, Headers };
+export { default as fetch, Request, Response, Headers } from 'node-fetch';

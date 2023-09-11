@@ -19,12 +19,14 @@
   "exports": {
     ".": {
       "import": {
+        "bun": "./web.mjs",
         "node": "./node.mjs",
         "deno": "./web.mjs",
         "workerd": "./web.mjs",
         "default": "./web.mjs"
       },
       "require": {
+        "bun": "./web.mjs",
         "node": "./node.cjs",
         "workerd": "./web.cjs",
         "default": "./web.cjs"

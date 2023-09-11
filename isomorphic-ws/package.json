@@ -2,7 +2,7 @@
   "name": "@libsql/isomorphic-ws",
   "version": "0.1.5-pre",
   "keywords": ["ws", "websocket", "isomorphic", "node", "deno", "workers"],
-  "description": "Isomorphic WebSockets in Node, Deno and Cloudflare Workers",
+  "description": "Isomorphic WebSockets in Node, Bun, Deno and Cloudflare Workers",
   "repository": {
     "type": "git",
     "url": "https://github.com/libsql/isomorphic-ts.git",
@@ -19,12 +19,14 @@
   "exports": {
     ".": {
       "import": {
+        "bun": "./web.mjs",
         "deno": "./web.mjs",
         "workerd": "./web.mjs",
         "node": "./node.mjs",
         "default": "./web.mjs"
       },
       "require": {
+        "bun": "./web.cjs",
         "deno": "./web.cjs",
         "workerd": "./web.cjs",
         "node": "./node.cjs",

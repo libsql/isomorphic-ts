@@ -26,7 +26,7 @@
         "default": "./web.mjs"
       },
       "require": {
-        "bun": "./web.mjs",
+        "bun": "./web.cjs",
         "node": "./node.cjs",
         "workerd": "./web.cjs",
         "default": "./web.cjs"

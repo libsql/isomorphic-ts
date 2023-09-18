@@ -13,7 +13,7 @@
     "Jan Špaček <honza@chiselstrike.com>"
   ],
   "license": "MIT",
-
+  "type": "module",
   "main": "node.cjs",
   "types": "index.d.ts",
   "exports": {

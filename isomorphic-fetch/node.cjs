@@ -1,5 +1,8 @@
 "use strict";
 
+const _Request = Request;
+const _Headers = Headers;
+
 const http = require("node:http");
 const https = require("node:https");
 
@@ -17,4 +20,4 @@ function agentSelector(parsedUrl) {
 function fetchWithAgentSelection(resource, options = {}) {
     return fetch(resource, { agent: agentSelector, ...options });
 }
-module.exports = { fetch: fetchWithAgentSelection };
+module.exports = { fetch: fetchWithAgentSelection, Request: _Request, Headers: _Headers };

@@ -18,6 +18,22 @@ function agentSelector(parsedUrl) {
 }
 
 function fetchWithAgentSelection(resource, options = {}) {
-    return fetch(resource, { agent: agentSelector, ...options });
+    let url = resource;
+    let fetchOptions = options;
+    
+    if (resource.constructor.name === 'Request') {
+        url = resource.url;
+        fetchOptions = {
+            method: resource.method,
+            headers: resource.headers,
+            body: resource.body,
+            ...options
+        };
+    }
+
+    const parsedUrl = new URL(url);
+    const agent = agentSelector(parsedUrl);
+
+    return fetch(url, { agent, ...fetchOptions });
 }
 module.exports = { fetch: fetchWithAgentSelection, Request: _Request, Headers: _Headers };

@@ -25,6 +25,7 @@ function fetchWithAgentSelection(resource, options = {}) {
             method: resource.method,
             headers: resource.headers,
             body: resource.body,
+            duplex: resource.duplex || "half",
             ...options
         };
     }

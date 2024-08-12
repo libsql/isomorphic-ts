@@ -16,23 +16,6 @@ function agentSelector(parsedUrl) {
 }
 
 function fetchWithAgentSelection(resource, options = {}) {
-    let url = resource;
-    let fetchOptions = options;
-    
-    if (resource.constructor.name === 'Request') {
-        url = resource.url;
-        fetchOptions = {
-            method: resource.method,
-            headers: resource.headers,
-            body: resource.body,
-            duplex: resource.duplex || "half",
-            ...options
-        };
-    }
-
-    const parsedUrl = new URL(url);
-    const agent = agentSelector(parsedUrl);
-
-    return fetch(url, { agent, ...fetchOptions });
+    return fetch(resource, { agent: agentSelector, ...options });
 }
 export { fetchWithAgentSelection as fetch, _Request as Request, _Headers as Headers};

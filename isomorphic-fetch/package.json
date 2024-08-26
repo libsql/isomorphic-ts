@@ -26,9 +26,9 @@
     ".": {
       "import": {
         "bun": "./web.js",
-        "node": "./node.js",
         "deno": "./web.js",
         "workerd": "./web.js",
+        "node": "./node.js",
         "default": "./web.js"
       },
       "require": {
